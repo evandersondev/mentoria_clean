@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'app/features/auth/presenter/views/login_view.dart';
-
 class AppWidget extends StatefulWidget {
   const AppWidget({Key? key}) : super(key: key);
 
@@ -12,8 +10,8 @@ class AppWidget extends StatefulWidget {
 class _AppWidgetState extends State<AppWidget> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: LoginView(),
+    return const MaterialApp(
+      home: Scaffold(),
     );
   }
 }

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'package:mentoria_clean/app/core/inject/inject.dart';
+import 'package:mentoria_clean/app/core/configs/inject.dart';
 
 import 'app_widget.dart';
 
 void main() {
-  Injector.init();
+  WidgetsFlutterBinding.ensureInitialized();
+
+  configureDependencies();
 
   runApp(const AppWidget());
 }

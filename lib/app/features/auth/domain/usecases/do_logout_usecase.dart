@@ -4,17 +4,16 @@ import 'package:injectable/injectable.dart';
 import 'package:mentoria_clean/app/core/usecase/usecase.dart';
 
 import '../../../../core/errors/failures.dart';
-import '../entities/user_entity.dart';
 import '../repositories/auth_repository.dart';
 
 @Injectable()
-class RegisterUserUsecase implements Usecase<UserEntity, UserEntity> {
+class DoLogoutUsecase implements Usecase<bool, NoParams> {
   final IAuthRepository _repository;
 
-  RegisterUserUsecase(this._repository);
+  DoLogoutUsecase(this._repository);
 
   @override
-  Future<Either<Failure, UserEntity>> call(UserEntity params) async {
-    return await _repository.register(params);
+  Future<Either<Failure, bool>> call(NoParams input) async {
+    return await _repository.logout();
   }
 }
