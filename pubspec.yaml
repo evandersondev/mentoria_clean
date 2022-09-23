@@ -1,0 +1,37 @@
+name: mentoria_clean
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  uuid: ^3.0.6
+  dartz: ^0.10.1
+  string_validator: ^0.3.0
+  dio: ^4.0.6
+  get_it: ^7.2.0
+  equatable: ^2.0.5
+  injectable: ^1.5.3
+  freezed: ^2.1.0+1
+  freezed_annotation: ^2.1.0
+  json_serializable: ^6.3.2
+  retrofit: ^3.0.1+1
+  mockito: ^5.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  injectable_generator: ^1.5.4
+  build_runner: ^2.2.1
+  retrofit_generator: ^4.0.3+2
+
+flutter:
+  uses-material-design: true
